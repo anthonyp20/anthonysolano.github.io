@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .marco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo {
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url(../img/363325506_3701368416855013_4694870524481931333_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.content button {
+    position: relative;
+    color: #fff;
+    margin-top:10px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+    border-radius: 100px;
+    padding: 20px 200px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
+.content button i {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+
+/* Footer */
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #181818;
+    transition: all 0.3s ease-out;
+    padding: 50px;
+    /* Reducir el espacio en el pie de página */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+footer p a {
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 20px 20px 20px;
+    color: #87CEFA;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media queries */
+/* Media queries para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .content {
+        margin-top: -30px;
+        position: absolute;
+        text-align: center;
+        /* Centrar el texto */
+
+    }
+
+   
+    .content button {
+        margin-top:10px;
+        padding: 15px 100px;
+        font-size: 20px;
+    }
+
+    .container .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: -500px;
+    }
+
+    /* Estilos para el footer en dispositivos móviles */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px;
+
+
+    }
+
+    footer p {
+        margin-left: 120px;
+        font-size: 14px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    footer p a {
+        display: flex;
+        margin-top: 20px;
+        padding: 20px;
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+}
+
+/* Media queries para pantallas más medianas, como tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .content {
+        position: absolute;
+        margin-top: -30px;
+        text-align: center;
+        /* Centrar el texto */
+
+    }
+
+  
+    .content button {
+        margin-top:10px;
+        padding: 15px 100px;
+        font-size: 20px;
+        /* Tamaño de fuente más pequeño para tabletas */
+    }
+
+    .container .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: -500px;
+    }
+
+    /* Estilos para el footer en tabletas */
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* Alinear elementos verticalmente */
+        align-items: center;
+        padding: 40px;
+    }
+
+    footer p {
+        margin-left: 120px;
+        font-size: 14px;
+        /* Tamaño de fuente predeterminado para tabletas */
+        margin: 5px;
+        /* Espacio entre los elementos del pie de página */
+        text-align: center;
+        /* Centrar el texto horizontalmente */
+    }
+
+    footer p a {
+        margin-right: 10px;
+        margin-top: -10px;
+        padding: 20px;
+        /* Tamaño de enlaces predeterminado para tabletas */
+        text-align: center;
+        /* Centrar el texto horizontalmente */
+    }
+}

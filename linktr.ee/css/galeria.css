@@ -1,0 +1,236 @@
+/* Reset some default styles and set a background color */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Styles for the container and the rest of your content */
+.container,
+.colum1,
+.galeria-content1,
+.galeria-content2,
+.galeria-content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+    margin-left: 20px;
+
+}
+
+.container,
+.colum2,
+.galeria-content4,
+.galeria-content5,
+.galeria-content6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px 0;
+    margin-right: 20px;
+
+}
+
+/* Styles for headings */
+.galeria-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styles for media items (stacking vertically) */
+.media-item {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Styles for images and videos */
+.media-item img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Styles for the footer */
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+    padding: 50px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.10);
+}
+
+footer p {
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+footer p a {
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 20px 20px 20px 20px;
+    color: #87CEFA;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/*Media queries*/
+/*Pantallas mas pequeñas, como dispositivos moviles*/
+@media (max-width: 768px) {
+
+    .container,
+    .colum1,
+    .galeria-content1,
+    .galeria-content2,
+    .galeria-content3 {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-width: 90%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+
+    .container,
+    .colum2,
+    .galeria-content4,
+    .galeria-content5,
+    .galeria-content6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-width: 90%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px 0;
+        align-items: center;
+        
+    }
+    footer p {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-weight: bold;
+    }
+  
+
+    footer p a{
+        color: #87CEFA;
+        transition: all 0.3s ease;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+}
+
+/*Pantallas mas medianas, como tabletas*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .container,
+    .colum1,
+    .galeria-content1,
+    .galeria-content2,
+    .galeria-content3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-width: 95%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .container,
+    .colum2,
+    .galeria-content4,
+    .galeria-content5,
+    .galeria-content6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-width: 95%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer p{
+        color: white;
+        font-weight: bold;
+        
+    }
+
+    footer p a{
+        color: #87CEFA;
+        transition: all 0.3s ease;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
